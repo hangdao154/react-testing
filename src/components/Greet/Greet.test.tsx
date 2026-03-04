@@ -25,19 +25,19 @@
  *  3. Code that is not important from user's POV
  */
 
-import { render, screen } from "@testing-library/react";
-import { Greet } from "./Greet";
+import { render, screen } from '@testing-library/react'
+import { Greet } from './Greet'
 
-describe("Greet", () => {
-  test("Greet renders correctly", () => {
-    render(<Greet />);
-    const textElement = screen.getByText(/Hello/);
-    expect(textElement).toBeInTheDocument();
-  });
+describe('Greet', () => {
+  test('Greet renders correctly', () => {
+    render(<Greet />)
+    const textElement = screen.getByText(/Hello/)
+    expect(textElement).toBeInTheDocument()
+  })
 
-  test("Greet renders a name", () => {
-    render(<Greet name="John" />);
-    const textElement = screen.getByText(/hello john/i);
-    expect(textElement).toBeInTheDocument();
-  });
-});
+  test('Greet renders a name', () => {
+    render(<Greet name="John" />)
+    const textElement = screen.getByText(/hello john/i)
+    expect(textElement).toBeInTheDocument()
+  })
+})

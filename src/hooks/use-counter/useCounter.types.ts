@@ -1,3 +1,3 @@
 export interface IUseCounterProps {
-  initialCount?: number;
+  initialCount?: number
 }

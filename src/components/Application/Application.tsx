@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC } from 'react'
 
 export const Application: FC = () => {
   return (
@@ -12,7 +12,13 @@ export const Application: FC = () => {
       <form>
         <div>
           <label htmlFor="name">Name</label>
-          <input type="text" id="name" placeholder="Fullname" value="John Doe" onChange={() => { }} />
+          <input
+            type="text"
+            id="name"
+            placeholder="Fullname"
+            value="John Doe"
+            onChange={() => {}}
+          />
         </div>
         <div>
           <label htmlFor="bio">Bio</label>
@@ -32,13 +38,15 @@ export const Application: FC = () => {
 
         <div>
           <label>
-            <input type="checkbox" id="terms" /> I agree to the terms and conditions
+            <input type="checkbox" id="terms" /> I agree to the terms and
+            conditions
           </label>
         </div>
 
-        <button type="submit">Submit</button>
+        <button type="submit" disabled>
+          Submit
+        </button>
       </form>
     </>
-  );
-};
-
+  )
+}

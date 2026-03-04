@@ -1,3 +1,3 @@
 export interface IGreetProps {
-  name?: string;
+  name?: string
 }

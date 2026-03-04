@@ -1,7 +1,7 @@
-import './App.css';
-import { MuiMode } from './components/mui/MuiMode';
-import { Users } from './components/users/Users';
-import { AppProviders } from './providers/AppProviders';
+import './App.css'
+import { MuiMode } from './components/mui/MuiMode'
+import { Users } from './components/users/Users'
+import { AppProviders } from './providers/AppProviders'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <Users />
       </div>
     </AppProviders>
-  );
+  )
 }
 
-export default App;
+export default App

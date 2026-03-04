@@ -1,22 +1,22 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react'
 
 export const Users = () => {
-  const [users, setUsers] = useState<string[]>([]);
-  const [error, setError] = useState<string | null>(null);
+  const [users, setUsers] = useState<string[]>([])
+  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/users")
+    fetch('https://jsonplaceholder.typicode.com/users')
       .then((res) => {
         if (!res.ok) {
-          throw new Error("Network response was not ok");
+          throw new Error('Network response was not ok')
         }
-        return res.json();
+        return res.json()
       })
       .then((data) => {
-        setUsers(data.map((user: { name: string }) => user.name));
+        setUsers(data.map((user: { name: string }) => user.name))
       })
-      .catch(() => setError("Error fetching users"));
-  }, []);
+      .catch(() => setError('Error fetching users'))
+  }, [])
 
   return (
     <div>
@@ -28,6 +28,5 @@ export const Users = () => {
         ))}
       </ul>
     </div>
-  );
-};
-
+  )
+}
